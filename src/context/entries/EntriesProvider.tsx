@@ -1,8 +1,8 @@
 import { FC, useReducer } from 'react';
+
 import { v4 as uuidv4 } from 'uuid';
 import { EntriesContext, entriesReducer } from './';
 import { Entry } from '@/interfaces';
-
 
 export interface EntriesState{
     entries: Entry[];
@@ -11,19 +11,19 @@ export interface EntriesState{
 const Entries_INITIAL_STATE: EntriesState = {
     entries: [{
         _id: uuidv4(),
-        description: 'Non irure nostrud officia ullamco aute et sit sunt ea quis qui. Officia id fugiat tempor velit dolor. Labore deserunt laborum reprehenderit veniam amet enim.',
+        description: 'Pendiente: Non irure nostrud officia ullamco aute et sit sunt ea quis qui. Officia id fugiat tempor velit dolor. Labore deserunt laborum reprehenderit veniam amet enim.',
         status: 'pending',
         createdAt: Date.now(),
     },
     {
         _id: uuidv4(),
-        description: 'Non irure nostrud officia ullamco aute et sit sunt ea quis qui. Officia id fugiat tempor velit dolor. Labore deserunt laborum reprehenderit veniam amet enim.',
+        description: 'En-Progreso: Non irure nostrud officia ullamco aute et sit sunt ea quis qui. Officia id fugiat tempor velit dolor. Labore deserunt laborum reprehenderit veniam amet enim.',
         status: 'in-progress',
         createdAt: Date.now() - 1000000,
     },
     {
         _id: uuidv4(),
-        description: 'Non irure nostrud officia ullamco aute et sit sunt ea quis qui. Officia id fugiat tempor velit dolor. Labore deserunt laborum reprehenderit veniam amet enim.',
+        description: 'Terminadas: Non irure nostrud officia ullamco aute et sit sunt ea quis qui. Officia id fugiat tempor velit dolor. Labore deserunt laborum reprehenderit veniam amet enim.',
         status: 'finished',
         createdAt: Date.now() - 1000000,
     },
