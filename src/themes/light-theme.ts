@@ -16,6 +16,7 @@ export const lightTheme = createTheme({
     error: {
       main: '#af083f'
     },
+    
   },
   components: {
     MuiAppBar: {
