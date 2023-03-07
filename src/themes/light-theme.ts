@@ -2,22 +2,32 @@ import { createTheme } from '@mui/material';
 
 
 export const lightTheme = createTheme({
-  palette:{
+  palette: {
     mode: 'light',
-    background:{
+    background: {
       default: '#f2f2f2'
     },
-    primary:{
-      main:'#2b292d'
+    primary: {
+      main: '#2b292d'
     },
-    secondary:{
-      main:'#19857b'
+    secondary: {
+      main: '#19857b'
     },
-    error:{
+    error: {
       main: '#af083f'
     },
   },
   components: {
-    
+    MuiAppBar: {
+      defaultProps: {
+        elevation: 0
+      },
+      styleOverrides: {
+        root: {
+         
+          
+        }
+      }
+    }
   }
 });
