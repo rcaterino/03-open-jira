@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import { Card, CardHeader, Grid } from '@mui/material';
 
+import { EntryList, NewEntry } from '@/components/ui';
 import { Layout } from '@/components/layouts';
-import { EntryList } from '@/components/ui';
 
 const HomePage: NextPage = () => {
   return (
@@ -15,6 +15,7 @@ const HomePage: NextPage = () => {
            
               { /** Agregar una nueva tarea */ }
               { /** Listado de las entradas */ }
+              <NewEntry/>
               <EntryList status='pending'/>
            
           </Card>

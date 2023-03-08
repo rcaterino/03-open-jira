@@ -21,7 +21,7 @@ export const EntryList: FC<Props> = ({ status }) => {
   return (
     // todo: aqui haremos drop
     <div>
-      <Paper sx={{ height: 'calc(100vh - 250px)', overflow: 'scroll', backgroundColor: 'transparent', padding: '1px 5px' }}>
+      <Paper sx={{ height: 'calc(100vh - 250px)', overflow:'scroll', backgroundColor: 'transparent', padding: '1px 5px' }}>
         {/** todo: cambiará dependiendo si esto haciendo drag o no */}
         <List sx={{ opacity: 1 }}>
           {
